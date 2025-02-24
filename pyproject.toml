@@ -1,0 +1,24 @@
+[project]
+name = "anthropic-design-pattern"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad-Ebad-Alam", email = "nebad590@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "langchain-google-genai>=2.0.10",
+    "langgraph>=0.2.74",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+anthropic-design-pattern = "anthropic_design_pattern:main"
+orch = "anthropic_design_pattern.orch:main"
+router = "anthropic_design_pattern.router:kickoff"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
